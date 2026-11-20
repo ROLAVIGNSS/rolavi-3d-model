@@ -1,0 +1,9 @@
+# ROLAVI 3D Model - standalone run in VS Code (Python 3.10 to 3.14)
+# Minimum versions only: pip keeps what is already installed.
+PyQt5>=5.15
+numpy>=1.24
+pyproj>=3.6
+pillow>=10.0
+# Optional: the 3D view (GEOStudio's Python already has them)
+pyvista>=0.40
+pyvistaqt>=0.11
