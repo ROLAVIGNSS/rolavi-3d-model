@@ -12,7 +12,7 @@ on the map).
 
 **ROLAVIScan** files (`*_mesh.ply`, `*_mesh_ENU.*`, `*_mesh_UTM.ply`, `*_3DGS.ply`,
 `PointCloud/*_live_cloud.ply`) are placed automatically with their own georeference. SLPK is the
-format read by ROLAVI Viewer and ArcGIS.
+format read by ROLAVI Viewer.
 
 The `rolavi_3d_model/` folder **is the QGIS plugin** (`metadata.txt`, `classFactory`, `LICENSE`);
 the same window can also run on its own, outside QGIS, with `run_dev.py`.
