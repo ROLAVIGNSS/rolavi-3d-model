@@ -1,0 +1,42 @@
+[general]
+name=ROLAVI 3D Model
+qgisMinimumVersion=3.28
+qgisMaximumVersion=4.99
+description=Georeference 3D models (OBJ, PLY meshes, point clouds, 3D Gaussian splats) with GCPs and export them as Scene Layer Packages (SLPK); GeoTIFF orthomosaics and DEMs, cut / fill volumes, and publishing to ROLAVI Viewer.
+version=1.0.1
+author=Marco Antonio Herrera Diaz - ROLAVI
+email=contact.rolavi@rolavisurveyor.com
+
+about=ROLAVI 3D Model brings photogrammetry and LiDAR 3D models into a real coordinate system and exports them as SLPK (I3S).
+    - Import textured OBJ, PLY meshes, PLY point clouds and 3D Gaussian splats (3DGS), including ROLAVIScan files placed with their own georeference.
+    - Place the model in any CRS (EPSG search, projected or geographic) and adjust it with ground control points (similarity transform, residuals per point).
+    - Optional geoid (GTX grid) for orthometric heights.
+    - Export WGS84 Scene Layer Packages: IntegratedMesh I3S 1.7 for meshes, PointCloud I3S 2.0 for point clouds.
+    - 2D and 3D views, base maps, and a layer list.
+    - GeoTIFF orthomosaics and DEMs in the 2D view; cut and fill volumes between two DEMs or between a DEM and a base elevation, inside polygons from Shapefile, DXF, KML, KMZ or drawn on the map.
+    - Optional: send models, DEMs, orthomosaics and vector layers to a ROLAVI Viewer account (https://viewer.rolavi.net). Everything else works without an account.
+    Requirements: numpy and Pillow (both included with QGIS for Windows). pyproj is used when present, otherwise the QGIS coordinate engine.
+    Optional 3D view: pyvista and pyvistaqt. Windows: close QGIS, open the OSGeo4W Shell and run "python -m pip install pyvista pyvistaqt". macOS / Linux: install them in the Python that QGIS uses. Without them the plugin works with the 2D view.
+
+tracker=https://github.com/ROLAVIGNSS/rolavi-3d-model/issues
+repository=https://github.com/ROLAVIGNSS/rolavi-3d-model
+homepage=https://github.com/ROLAVIGNSS/rolavi-3d-model
+
+tags=3d,slpk,i3s,scene layer package,obj,ply,point cloud,gaussian splatting,georeferencing,gcp,photogrammetry,lidar,dem,orthomosaic,volume,cut fill
+category=Plugins
+icon=icon.png
+experimental=False
+deprecated=False
+hasProcessingProvider=no
+server=False
+
+changelog=
+    1.0.1 Security review fixes (no change in how the plugin works).
+      - KML and GDAL .aux.xml files are read with a safe XML reader (no entity expansion, no external entities).
+      - Downloads (base maps, ROLAVI Viewer) only open http:// and https:// addresses.
+      - Narrower error handling instead of catching every exception; no assert statements.
+    1.0.0 First public release (formerly ROLAVI OBJ to SLPK).
+      - OBJ, PLY mesh, point cloud and 3DGS import; ROLAVIScan georeference.
+      - GCP adjustment, geoid, export to SLPK (IntegratedMesh 1.7, PointCloud 2.0).
+      - GeoTIFF orthomosaics and DEMs, cut / fill volumes inside polygons (SHP, DXF, KML, KMZ, drawn).
+      - ROLAVI Viewer account: send SLPK, DEMs, orthomosaics (JPG pieces at full resolution) and vector layers.
