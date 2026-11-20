@@ -1,6 +1,3 @@
-# ROLAVI 3D Model - QGIS plugin metadata
-# Before uploading to plugins.qgis.org, replace CHANGE-ME in email with your address.
-
 [general]
 name=ROLAVI 3D Model
 qgisMinimumVersion=3.28
@@ -8,7 +5,7 @@ qgisMaximumVersion=4.99
 description=Georeference 3D models (OBJ, PLY meshes, point clouds, 3D Gaussian splats) with GCPs and export them as Scene Layer Packages (SLPK); GeoTIFF orthomosaics and DEMs, cut / fill volumes, and publishing to ROLAVI Viewer.
 version=1.0.0
 author=Marco Antonio Herrera Diaz - ROLAVI
-email=CHANGE-ME
+email=contact.rolavi@rolavisurveyor.com
 
 about=ROLAVI 3D Model brings photogrammetry and LiDAR 3D models into a real coordinate system and exports them as SLPK (I3S).
     - Import textured OBJ, PLY meshes, PLY point clouds and 3D Gaussian splats (3DGS), including ROLAVIScan files placed with their own georeference.
