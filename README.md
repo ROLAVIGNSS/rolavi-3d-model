@@ -277,5 +277,5 @@ rolavi_3d_model/               THE PLUGIN (this folder goes inside the zip)
 
 GNU General Public License, version 2 or (at your option) any later version. See `LICENSE`.
 
-Copyright (C) 2026 Marco Antonio Herrera Diaz — ROLAVI ·
+Copyright (C) 2026 — ROLAVI ·
 contact.rolavi@rolavisurveyor.com · https://www.rolavisurveyor.com
